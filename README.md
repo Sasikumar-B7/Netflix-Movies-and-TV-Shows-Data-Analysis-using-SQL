@@ -77,7 +77,7 @@ RELEASE_YEAR = 2020;
 
 **Objective:** Retrieve all movies released in a specific year.
 
-**4. Find the Top 5 Countries with the Most Content on Netflix**
+## 4. Find the Top 5 Countries with the Most Content on Netflix**
 
 ```sql
 SELECT * 
@@ -88,7 +88,7 @@ AND RELEASE_YEAR = 2021;```
 
 **Objective:** Identify the top 5 countries with the highest number of content items.
 
-**5. Identify the Longest Movie**
+## 5. Identify the Longest Movie
 
 ```sql
 SELECT
@@ -110,7 +110,7 @@ LIMIT 5;
 
 **Objective:** Find the movie with the longest duration.
 
-**6. Find Content Added in the Last 5 Years**
+## 6. Find Content Added in the Last 5 Years
 
 ```sql
 SELECT * 
