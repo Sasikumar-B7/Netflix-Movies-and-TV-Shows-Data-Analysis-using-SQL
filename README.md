@@ -77,7 +77,7 @@ RELEASE_YEAR = 2020;
 
 **Objective:** Retrieve all movies released in a specific year.
 
-## 4. Find the Top 5 Countries with the Most Content on Netflix**
+**4. Find the Top 5 Countries with the Most Content on Netflix**
 
 ```sql
 SELECT * 
@@ -88,7 +88,7 @@ AND RELEASE_YEAR = 2021;```
 
 **Objective:** Identify the top 5 countries with the highest number of content items.
 
-## 5. Identify the Longest Movie
+**5. Identify the Longest Movie**
 
 ```sql
 SELECT
@@ -240,25 +240,21 @@ from netflix
 GROUP BY CATEGORY, TYPE
 ORDER BY TYPE DESC; ```
 
-
 ## Findings and Conclusion
 
 - **Content Distribution:** The dataset contains a diverse range of movies and TV shows with varying ratings and genres.
+
 - **Common Ratings:** Insights into the most common ratings provide an understanding of the content's target audience.
+
 - **Geographical Insights:** The top countries and the average content releases by India highlight regional content distribution.
+
 - **Content Categorization:** Categorizing content based on specific keywords helps in understanding the nature of content available on Netflix.
 
 This analysis provides a comprehensive view of Netflix's content and can help inform content strategy and decision-making.
 
-
-
 ## Author - Sasikumar , B
 
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
-
-
-
-
 
 
 
