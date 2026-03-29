@@ -36,12 +36,12 @@ CREATE TABLE NETFLIX (
 
 ### 1. Count the Number of Movies vs TV Shows
 
-```sql
+sql
 select 
 type,
 count(*)
 from netflix
-group by type;```
+group by type;
 
 
 
