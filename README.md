@@ -16,3 +16,22 @@ The data for this project is sourced from the Kaggle dataset:
 
 - **Dataset Link:** [Movies Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
 
+- ## Schema
+
+```sql
+CREATE TABLE NETFLIX (
+	show_id	VARCHAR (10),
+	type VARCHAR(20),
+	title VARCHAR(104),
+	director VARCHAR(208),
+	cast VARCHAR(1000),
+	country VARCHAR(150),
+	date_added VARCHAR(50),
+	release_year VARCHAR (20),
+	rating VARCHAR(10),
+    duration VARCHAR (15),
+	listed_in VARCHAR (100),
+	description VARCHAR (250)
+);```
+
+
