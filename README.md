@@ -105,8 +105,7 @@ ON TRUE
 WHERE jt.country <> ''
 GROUP BY TRIM(jt.country)
 ORDER BY total_count DESC
-LIMIT 5;
-```
+LIMIT 5;```
 
 **Objective:** Find the movie with the longest duration.
 
@@ -115,8 +114,7 @@ LIMIT 5;
 ```sql
 SELECT * 
 FROM NETFLIX 
-WHERE RELEASE_YEAR >= YEAR (DATE_SUB(CURRENT_DATE, INTERVAL 5 YEAR));
-```
+WHERE RELEASE_YEAR >= YEAR (DATE_SUB(CURRENT_DATE, INTERVAL 5 YEAR)); ```
 
 **Objective:** Retrieve content added to Netflix in the last 5 years.
 
@@ -125,8 +123,7 @@ WHERE RELEASE_YEAR >= YEAR (DATE_SUB(CURRENT_DATE, INTERVAL 5 YEAR));
 ```sql
 SELECT *
 FROM netflix
-WHERE DIRECTOR LIKE '%Rajiv Chilaka%';
-```
+WHERE DIRECTOR LIKE '%Rajiv Chilaka%'; ```
 
 **Objective:** List all content directed by 'Rajiv Chilaka'.
 
@@ -142,8 +139,7 @@ WHERE
 TYPE = 'TV SHOW' 
 AND 
 CAST(SUBSTRING_INDEX (duration, ' ', 1) AS UNSIGNED) > 5
-order by duration_season desc;
-```
+order by duration_season desc; ```
 
 **Objective:** Identify TV shows with more than 5 seasons.
 
@@ -158,8 +154,7 @@ JSON_TABLE(
     CONCAT('["', REPLACE(listed_in, ',', '","'), '"]'),
     '$[*]' COLUMNS (genre VARCHAR(255) PATH '$')
 ) AS jt
-GROUP BY genre;
-```
+GROUP BY genre; ```
 
 **Objective:** Count the number of content items in each genre.
 
@@ -174,8 +169,7 @@ FROM NETFLIX
 WHERE COUNTRY LIKE '%India%'
 GROUP BY RELEASE_YEAR
 ORDER BY TOTAL_SHOW desc
-LIMIT 5;
-```
+LIMIT 5; ```
 
 **Objective:** Calculate and rank years by the average number of content releases by India.
 
@@ -184,8 +178,7 @@ LIMIT 5;
 ```sql
 SELECT *
 FROM NETFLIX
-WHERE LISTED_IN LIKE '%Documentaries%';
-```
+WHERE LISTED_IN LIKE '%Documentaries%'; ```
 
 **Objective: Retrieve all movies classified as documentaries.**
 
@@ -194,8 +187,7 @@ WHERE LISTED_IN LIKE '%Documentaries%';
 ```sql
 SELECT * 
 FROM netflix
-WHERE director IS NULL;
-```
+WHERE director IS NULL; ```
 
 **Objective: List content that does not have a director.**
 
@@ -246,8 +238,7 @@ when
 from netflix
 ) AS CATEGORIZED_CONTENT
 GROUP BY CATEGORY, TYPE
-ORDER BY TYPE DESC;
-```
+ORDER BY TYPE DESC; ```
 
 
 ## Findings and Conclusion
