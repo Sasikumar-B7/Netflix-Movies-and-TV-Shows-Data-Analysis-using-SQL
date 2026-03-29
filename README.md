@@ -72,8 +72,7 @@ WHERE RK = 1;```
 SELECT * 
 FROM NETFLIX
 WHERE TYPE = 'MOVIE' AND
-RELEASE_YEAR = 2020;
-```
+RELEASE_YEAR = 2020;```
 
 **Objective:** Retrieve all movies released in a specific year.
 
@@ -238,7 +237,8 @@ when
 from netflix
 ) AS CATEGORIZED_CONTENT
 GROUP BY CATEGORY, TYPE
-ORDER BY TYPE DESC; ```
+ORDER BY TYPE DESC;
+```
 
 ## Findings and Conclusion
 
