@@ -77,7 +77,7 @@ RELEASE_YEAR = 2020;
 
 **Objective:** Retrieve all movies released in a specific year.
 
-### 4. Find the Top 5 Countries with the Most Content on Netflix
+**4. Find the Top 5 Countries with the Most Content on Netflix**
 
 ```sql
 SELECT * 
@@ -88,7 +88,7 @@ AND RELEASE_YEAR = 2021;```
 
 **Objective:** Identify the top 5 countries with the highest number of content items.
 
-### 5. Identify the Longest Movie
+**5. Identify the Longest Movie**
 
 ```sql
 SELECT
@@ -110,7 +110,7 @@ LIMIT 5;
 
 **Objective:** Find the movie with the longest duration.
 
-### 6. Find Content Added in the Last 5 Years
+**6. Find Content Added in the Last 5 Years**
 
 ```sql
 SELECT * 
@@ -120,7 +120,7 @@ WHERE RELEASE_YEAR >= YEAR (DATE_SUB(CURRENT_DATE, INTERVAL 5 YEAR));
 
 **Objective:** Retrieve content added to Netflix in the last 5 years.
 
-### 7. Find All Movies/TV Shows by Director 'Rajiv Chilaka'
+**7. Find All Movies/TV Shows by Director 'Rajiv Chilaka'**
 
 ```sql
 SELECT *
@@ -130,7 +130,7 @@ WHERE DIRECTOR LIKE '%Rajiv Chilaka%';
 
 **Objective:** List all content directed by 'Rajiv Chilaka'.
 
-### 8. List All TV Shows with More Than 5 Seasons
+**8. List All TV Shows with More Than 5 Seasons**
 
 ```sql
 SELECT 
@@ -147,7 +147,7 @@ order by duration_season desc;
 
 **Objective:** Identify TV shows with more than 5 seasons.
 
-### 9. Count the Number of Content Items in Each Genre
+**9. Count the Number of Content Items in Each Genre**
 
 ```sql
 SELECT 
@@ -163,8 +163,8 @@ GROUP BY genre;
 
 **Objective:** Count the number of content items in each genre.
 
-### 10.Find each year and the average numbers of content release in India on netflix. 
-return top 5 year with highest avg content release!
+**10.Find each year and the average numbers of content release in India on netflix. 
+return top 5 year with highest avg content release!**
 
 ```sql
 SELECT
@@ -179,7 +179,7 @@ LIMIT 5;
 
 **Objective:** Calculate and rank years by the average number of content releases by India.
 
-### 11. List All Movies that are Documentaries
+**11. List All Movies that are Documentaries**
 
 ```sql
 SELECT *
@@ -189,7 +189,7 @@ WHERE LISTED_IN LIKE '%Documentaries%';
 
 **Objective:** Retrieve all movies classified as documentaries.
 
-### 12. Find All Content Without a Director
+**12. Find All Content Without a Director**
 
 ```sql
 SELECT * 
@@ -199,7 +199,7 @@ WHERE director IS NULL;
 
 **Objective:** List content that does not have a director.
 
-### 13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years
+**13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years**
 
 ```sql
 SELECT *
@@ -210,7 +210,7 @@ release_year >= extract(YEAR from CURRENT_DATE) - 10;```
 
 **Objective:** Count the number of movies featuring 'Salman Khan' in the last 10 years.
 
-### 14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India
+**14. Find the Top 10 Actors Who Have Appeared in the Highest Number of Movies Produced in India**
 
 ```sql
 SELECT 
@@ -229,7 +229,7 @@ LIMIT 10;```
 
 **Objective:** Identify the top 10 actors with the most appearances in Indian-produced movies.
 
-### 15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords
+**15. Categorize Content Based on the Presence of 'Kill' and 'Violence' Keywords**
 
 ```sql
 SELECT 
@@ -265,8 +265,6 @@ This analysis provides a comprehensive view of Netflix's content and can help in
 
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
-
-**Objective:** Categorize content as 'Bad' if it contains 'kill' or 'violence' and 'Good' otherwise. Count the number of items in each category.
 
 
 
