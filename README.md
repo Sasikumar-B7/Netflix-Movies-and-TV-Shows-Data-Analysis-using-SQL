@@ -43,6 +43,24 @@ count(*)
 from netflix
 group by type; ```
 
+**Objective:** Determine the distribution of content types on Netflix.
+
+### 2. Find the Most Common Rating for Movies and TV Shows
+
+```sql
+SELECT TYPE, RATING, TOTAL
+FROM
+(
+select 
+	TYPE,
+    RATING,
+    COUNT(*) AS TOTAL,
+    RANK() OVER(PARTITION BY TYPE ORDER BY COUNT(*) DESC) AS RK
+    FROM NETFLIX
+    GROUP BY TYPE, RATING
+) T
+WHERE RK = 1;```
+
 **Objective:** Identify the most frequently occurring rating for each type of content.
 
 ### 3. List All Movies Released in a Specific Year (e.g., 2020)
@@ -63,6 +81,10 @@ SELECT *
 FROM NETFLIX 
 WHERE TYPE = 'TV SHOW'
 AND RELEASE_YEAR = 2021;```
+
+
+**Objective:** Identify the top 5 countries with the highest number of content items.
+
 
 
 
