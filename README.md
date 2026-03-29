@@ -187,7 +187,7 @@ FROM NETFLIX
 WHERE LISTED_IN LIKE '%Documentaries%';
 ```
 
-**Objective:** Retrieve all movies classified as documentaries.
+**Objective: Retrieve all movies classified as documentaries.**
 
 **12. Find All Content Without a Director**
 
@@ -197,7 +197,7 @@ FROM netflix
 WHERE director IS NULL;
 ```
 
-**Objective:** List content that does not have a director.
+**Objective: List content that does not have a director.**
 
 **13. Find How Many Movies Actor 'Salman Khan' Appeared in the Last 10 Years**
 
