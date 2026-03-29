@@ -69,8 +69,7 @@ WHERE RK = 1;```
 SELECT * 
 FROM NETFLIX
 WHERE TYPE = 'MOVIE' AND
-RELEASE_YEAR = 2020;
-```
+RELEASE_YEAR = 2020; ```
 
 **Objective:** Retrieve all movies released in a specific year.
 
