@@ -43,5 +43,27 @@ count(*)
 from netflix
 group by type; ```
 
+**Objective:** Identify the most frequently occurring rating for each type of content.
+
+### 3. List All Movies Released in a Specific Year (e.g., 2020)
+
+```sql
+SELECT * 
+FROM NETFLIX
+WHERE TYPE = 'MOVIE' AND
+RELEASE_YEAR = 2020;
+```
+
+**Objective:** Retrieve all movies released in a specific year.
+
+### 4. Find the Top 5 Countries with the Most Content on Netflix
+
+```sql
+SELECT * 
+FROM NETFLIX 
+WHERE TYPE = 'TV SHOW'
+AND RELEASE_YEAR = 2021;```
+
+
 
 
